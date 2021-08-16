@@ -3,119 +3,143 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./styles.css" rel="stylesheetlocal"> 
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet"> 
+        <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
         <title>Web Italia Erp</title>
     </head>
     
 
     <body>
-
-      <div class="bg-blue-900 pt-6">
-        <nav class ="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-          <div class="flex items-center flex-1">
-
-            <div class="flex items-center justify-between w-full md:w-auto">
-              
-              <a href="#">
-                <span class="sr-only">Workflow</span>
-                <img class="h-32 w-auto sm:h-30" src="./LogoItalia.jpeg" alt="">
-              </a>
-
-              <div class="-mr-2 flex items-center md:hidden">
-                <button type="button" class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
-                  <!-- #region <span class="sr-only">Open main menu</span>-->
-                  <!-- Heroicon name: outline/menu 
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                -->
-                </button>
-              </div>
-
-            </div>
-          
-            <div class="hidden space-x-8 md:flex md:ml-10">
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Productos</a>
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Servicios</a>
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Aceraca de nosotros</a>
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Contacto</a>
-            </div> 
-          </div> 
-
-          <div class="hidden md:flex md:items-center md:space-x-6">
-            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Registrarse</a>
-            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Iniciar sesión</a>
-          </div>
-        </nav>
+      <div class="flex-container">
+        <img class="logo" src="./LogoItalia.jpeg" alt="" width=5% height=5%>
+        <div><a href="#">Productos</a></div>
+        <div><a href="#">Servicios</a></div>
+        <div><a href="#">Acerca de nosotros</a></div>
+        <div><a href="#">Contacto</a></div>
+        <div><a href="#" class="text-base font-medium text-white hover:text-gray-300">Registrarse</a></div>
+        <div><a href="#" class="text-base font-medium text-white hover:text-gray-300">Iniciar sesión</a></div>
       </div>
+      
 
 
-      <img src="./Wallpaper.jpg" alt="Italian Trulli">
-
-        <aside class='aside-contenedor'>
-            <h1>
-                AUMENTA LAS UTILIDADES DE TU EMPRESA DE CALZADO
-            </h1>
-            <h2>
-                con nuestro Sistema ERP controlarás todas las áreas de tu empresa
-            </h2>
-            <div class="min-w-0 flex-1">
-                <label for="email" class="sr-only">Email address</label>
-                <input id="email" type="email" placeholder="Ingresa tu correo" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-              </div>
-            <p>
-                Estás a un paso de organizar, controlar y reducir costos.
-            </p>
-            <img src="./Wallpapper.jpg" alt="wallpaperjumbotron">
-        </aside>
-
-        <div class='blog'>
-            <h1>
-                BASICO
-            </h1>
-            <img src="./Basico.jpeg" alt="fotoblog1">
-            <P>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto magnam eveniet quaerat est, ut, quod tenetur officia necessitatibus impedit consectetur id deleniti commodi, nostrum blanditiis ea omnis quo ipsam excepturi.
-            </P>
-
-            <h1>
-                PYME
-            </h1>
-            <img src="./Pyme.jpeg" alt="fotoblog2">
-            <P>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto magnam eveniet quaerat est, ut, quod tenetur officia necessitatibus impedit consectetur id deleniti commodi, nostrum blanditiis ea omnis quo ipsam excepturi.
-            </P>
-
-            <h1>    
-                PREMIUM
-            </h1>
-            <img src="./Premium.jpeg" alt="fotoblog3">
-            <P>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto magnam eveniet quaerat est, ut, quod tenetur officia necessitatibus impedit consectetur id deleniti commodi, nostrum blanditiis ea omnis quo ipsam excepturi.
-            </P>
+      <!-- JUMBOTRON -->
+      <div class="grid-container-main">
+        <div class="grid-item-main">
+          <img src="./Wallpaper.jpg" alt="wallppaer" width=100%  height=auto; >
+        </div>  
+        <div class="grid-item-main">
+          <h2>
+            AUMENTA LAS UTILIDADES DE TU EMPRESA DE CALZADO
+          </h2>
+          <h3>
+            con nuestro Sistema ERP controlarás todas las áreas de tu empresa
+          </h3>
+          <div class="min-w-0 flex-1">
+            <label for="email" class="sr-only">Email address</label>
+            <input id="email" type="email" placeholder="Ingresa tu correo" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+          </div>
+          <p>
+            Estás a un paso de organizar, controlar y reducir costos.
+          </p>
         </div>
+      </div>
+      
+      
 
-        <div class='propuesta'>
-              </video>
-              <video width="1280 height="960" autoplay muted>
-                <source src="./ItaliaDemo.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
+      <!--<div class="flex-container">-->
+        <h1>BLOG</h1>
 
-            
-            <li>Cuéntanos acerca de tu fabrica de calzado y podemos ayudarte a alcanzar ese nivel que buscas.</li>
+        <div class="grid-container-blog">
+
+          <div class="grid-item-blog">
+            <h1>MICRO</h1>
+          </div>
+          <div class="grid-item-blog">
+            <h1>PYME</h1>
+          </div>
+          <div class="grid-item-blog">
+            <h1>PREMIUM</h1>  
+          </div>
+
+          <div class="grid-item-blog">
+            <a target="_blank" href="img_5terre.jpg">
+              <img src="Basico.jpeg" alt="Cinque Terre" width=66%  height=auto;>
+            </a>
+          </div>
+          <div class="grid-item-blog">
+            <a target="_blank" href="img_forest.jpg">
+              <img src="Pyme.jpeg" alt="Forest" width=66%  height=auto;>
+            </a>
+          </div>
+          <div class="grid-item-blog">
+            <a target="_blank" href="img_lights.jpg">
+              <img src="fabrica-calzado-2.jpg" alt="Northern Lights" width="66%"  height=auto;>
+            </a>
+          </div>
+
+          <div class="grid-item-blog">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum magni quos nostrum eius ea, distinctio vero perferendis nulla cum dolorum eos consectetur nemo quod consequuntur? Eveniet autem quia est quis! </p>
+          </div>
+          <div class="grid-item-blog">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum ab facere neque corporis aliquam eum dicta aperiam incidunt consectetur nemo, animi voluptate? Eius atque accusantium autem! Magni, enim aut. i</p>
+          </div>
+          <div class="grid-item-blog">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet et a quam omnis, animi velit tenetur, optio magnam fugiat perspiciatis voluptate sed impedit maxime corrupti hic minus officiis ratione.</p>
+          </div>
+        </div>
+      <!--</div>-->
+
+
+
+
+      <!--
+      <div class='blog'>
+          <h1>BLOG</h1>
+          <div class="gallery">
+            <h1>BASICO</h1>
+            <a target="_blank" href="img_5terre.jpg">
+              <img src="Basico.jpeg" alt="Cinque Terre" width="2400" height="1600">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ipsam numquam! Nulla, id, doloribus atque sapiente excepturi est possimus quos deserunt ducimus unde officiis esse quia delectus facere nam aliquam!</div>
+          </div>
+          
+          <div class="gallery">
+            <h1>PYME</h1>
+            <a target="_blank" href="img_forest.jpg">
+              <img src="Pyme.jpeg" alt="Forest" width="2400" height="1600">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ipsam numquam! Nulla, id, doloribus atque sapiente excepturi est possimus quos deserunt ducimus unde officiis esse quia delectus facere nam aliquam!</div>
+          </div>
+          
+          <div class="gallery">
+            <h1>PREMIUM</h1>
+            <a target="_blank" href="img_lights.jpg">
+              <img src="fabrica-calzado-2.jpg" alt="Northern Lights" width="2400" height="1600">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ipsam numquam! Nulla, id, doloribus atque sapiente excepturi est possimus quos deserunt ducimus unde officiis esse quia delectus facere nam aliquam!</div>
+          </div>
+
+        </div>
+        -->
+
+        <h1>PROPUESTA DE VALOR</h1>
+        <div class="grid-container-propuesta">
+          <div class="grid-item">
+            <h1>Cuéntanos acerca de tu fabrica de calzado y podemos ayudarte a alcanzar ese nivel que buscas.</h1>
             <li>Te Asesoramos en el proceso.</li>
             <li>Nos Adaptamos a tu presupuesto.</li>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate pariatur facilis quas cum, praesentium nulla, dolorum nobis eos ullam nihil minima repellat obcaecati! Animi fuga obcaecati facilis sapiente corporis.
-            </p>
-            <li>
-                Contactar ahora!
-            </li>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam at magnam optio illum dolore nisi quia aliquid harum cumque alias, eius doloremque quibusdam quaerat! Iste, laborum? Dolorem, fugit accusantium.</P>
+          </div>
+          <div class="grid-item">
+            <video width="1200" autoplay muted>    <!--width="1280" height="960"  autoplay muted>-->
+              <source src="./ItaliaDemo.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
+      
  
 </body>
 

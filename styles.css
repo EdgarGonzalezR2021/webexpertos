@@ -44,8 +44,9 @@ img {
     }
   }
 
-  /*@media screen and (max-width: 800px) {
+  @media screen and (min-width: 800px) {
     .flex-container2 {
+      flex-direction: column;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
     } 

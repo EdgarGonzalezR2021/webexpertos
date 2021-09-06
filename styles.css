@@ -22,19 +22,20 @@ img {
 
   .flex-container {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
     /*position: relative*/
   }
 
   .flex-container > div {
     /*background-color: #f1f1f1;*/
-    
-    margin: 10px;
-    height: 20px;
-    padding: 35px;
+    background-color:powderblue;
+    margin: 2px;
+    /*margin-top: 12px;
+    height: 10px;*/
+    padding: 25px;
     /*font-size: 16px;*/
-    font-family: Roboto;
-    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
    }
 
   /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -97,6 +98,7 @@ img {
     grid-template-columns: auto 33% ;
     /*background-color: #2196F3;*/
     padding: 0px;
+    margin-top: 3%;
   }
   .grid-item-main {
     /*background-color: rgba(255, 255, 255, 0.8);
@@ -104,7 +106,7 @@ img {
     padding: 20px;
     /*font-size: 12px;*/
     text-align: center;
-    margin-top: 35%;
+    /*margin-top: 15%;*/
   }
   
 
